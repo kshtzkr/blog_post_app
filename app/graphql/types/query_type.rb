@@ -16,5 +16,7 @@ module Types
 
     field :blogs, resolver: Queries::FetchBlogs
     field :blog, resolver: Queries::FetchBlog
+    field :blogs_with_category, resolver: Queries::FetchBlogsWithCategory
+    field :categories, resolver: Queries::FetchCategories
   end
 end

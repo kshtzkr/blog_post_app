@@ -6,5 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 5.times do |i|
-  Blog.create(title: "Blog #{i + 1}", body: 'Lorem ipsum saves lives')
+  Category.create(category_type: "category #{i + 1}")
+end
+
+5.times do |i|
+  Blog.create(title: "Blog #{i + 1}", body: 'Lorem ipsum saves lives', category_id: i + 1)
 end

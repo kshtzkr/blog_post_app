@@ -8,5 +8,6 @@ module Types
     end
 
     field :add_blog, mutation: Mutations::AddBlog
+    field :add_category, mutation: Mutations::AddCategory
   end
 end

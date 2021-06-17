@@ -1,9 +1,8 @@
 module Types
-  class BlogType < Types::BaseObject
+  class CategoryType < Types::BaseObject
     field :id, ID, null: false
-    field :title, String, null: true
-    field :body, String, null: true
-    field :category, CategoryType, null: false
+    field :category_type, String, null: true
+    field :blogs, [BlogType], null: true
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end
